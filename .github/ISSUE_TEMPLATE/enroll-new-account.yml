@@ -1,0 +1,83 @@
+name: Add Permissions to Role
+description: Request to add Permissions to role
+title: "Add permission to Role: [rolename]"
+labels: [ request-permissions ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Please read before continuing**: This issue form is to request additional permissions to a team's VAEC ADFS provisioned AWS role.
+
+        **All of the fields in this form are required.** You must provide the following information:
+        - name of the role requested for alterations
+        - justification for requiring extra permissions
+        - permissions requested presented as a valid AWS IAM json document
+
+  - type: checkboxes
+    id: acknowledge
+    attributes:
+      label: Acknowledge Instructions
+      description: Please acknowledge that you have read the above instructions
+      options:
+        - label: |
+            I acknowledge that I have read the above instructions and will provide justification for additional permissions.
+          required: true
+  - type: dropdown
+    id: acct
+    attributes:
+      label: Which AWS account will these permissions be added to?
+      options:
+        - vaec-bip-dev
+        - vaec-bip-stage
+        - vaec-bip-prod
+        - all
+    validations:
+      required: true
+  - type: dropdown
+    id: project
+    attributes:
+      label: What project are you requesting changes for
+      options:
+        - bgs
+        - crp
+        - empwr
+    validations:
+      required: true
+  - type: dropdown
+    id: roletype
+    attributes:
+      label: For which role are are you requesting changes?
+      options:
+        - admin
+        - read-only
+    validations:
+      required: true
+  - type: textarea
+    id: justification
+    attributes:
+      label: justification for permissions
+      render: plain text
+  - type: textarea
+    id: policy
+    attributes:
+      render: JSON
+      label: aws json policy
+      description: Valid json IAM policy
+      placeholder: |
+            {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                    "Sid": "a policy sid id",
+                    "Effect": "effect",
+                    "Action": [
+                        "some:action*"
+                    ],
+                    "Resource": [
+                      "some:resource"
+                    ]
+                }
+              ]
+            }
+    validations:
+      required: true

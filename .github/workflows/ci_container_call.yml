@@ -1,0 +1,74 @@
+name: workfow_container_call
+on:
+  workflow_call:
+    inputs:
+      env:
+        description: the name of the environment to use
+        required: true
+        type: string
+      repository:
+        description: name of container repository to pull from
+        required: true
+        type: string
+        default: 'bip/build-harness'
+      image_tag:
+        description: the image tag to pull from the repository
+        required: true
+        type: string
+        default: '2022-04-28.1'
+      recipe:
+        description: The name of the Just recipe to invoke
+        required: true
+        type: string
+    secrets:
+      BIA_TF_PAT:
+        required: true
+
+jobs:
+  setup:
+    runs-on: ${{ inputs.env }}
+    environment: ${{ inputs.env }}
+    outputs:
+      pulled_image: ${{steps.image.outputs.IMAGE}}
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-gov-west-1
+          mask-aws-account-id: no
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+        with:
+          skip-logout: true
+
+      - name: register ecr facts
+        id: image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ inputs.repository}}
+          IMAGE_TAG: ${{ inputs.image_tag }}
+        run: |
+          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          docker pull "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
+  run_build_harness:
+    runs-on: ${{ inputs.env }}
+    environment: ${{ inputs.env }}
+    container:
+      image: ${{needs.setup.outputs.pulled_image}}
+    needs: setup
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: ${{secrets.BIA_TF_PAT}}
+
+      - name: run the build harness
+        working-directory: /app
+        env:
+          TF_LOC: ${{github.workspace}}
+        run: just ${{ inputs.recipe }}

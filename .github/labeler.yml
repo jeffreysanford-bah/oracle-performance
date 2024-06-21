@@ -1,0 +1,6 @@
+cicd:
+- .github/**
+docs:
+- docs/**
+terraform:
+- src/terraform/**

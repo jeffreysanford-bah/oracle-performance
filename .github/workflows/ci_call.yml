@@ -1,0 +1,71 @@
+name: workfow_call
+on:
+  workflow_call:
+    inputs:
+      env:
+        description: the name of the environment to use
+        required: true
+        type: string
+      repository:
+        description: name of container repository to pull from
+        required: true
+        type: string
+        default: 'bip/build-harness'
+      image_tag:
+        description: the image tag to pull from the repository
+        required: true
+        type: string
+        default: '2022-04-28.1'
+      recipe:
+        description: The name of the Just recipe to invoke
+        required: true
+        type: string
+    secrets:
+      BIA_TF_PAT:
+        required: true
+
+jobs:
+  run_terragrunt:
+    runs-on: ${{ inputs.env }}
+    environment: ${{ inputs.env }}
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-gov-west-1
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+        with:
+          skip-logout: true
+
+      - name: register ecr facts
+        id: image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ inputs.repository}}
+          IMAGE_TAG: ${{ inputs.image_tag }}
+        run: |
+          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          docker pull "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: ${{secrets.BIA_TF_PAT}}
+
+      - name: run the build harness
+        run: |
+          docker run \
+            --rm -i \
+            -v ${{ github.workspace }}:/src/ \
+            -v ~/.config/git/credentials:/root/.git-credentials \
+            ${{ steps.image.outputs.IMAGE }} \
+            ${{ inputs.recipe }}
+
+      - name: cleanup git credentials
+        run: |
+          rm -f ~/.config/git/credentials

@@ -1,0 +1,11 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+    authors:
+      - octocat
+  categories:
+    - title: Module
+      labels:
+        - account-iam
+        - lambda

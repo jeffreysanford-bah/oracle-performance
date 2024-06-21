@@ -1,0 +1,31 @@
+name: manual_container_run
+on:
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        description: "Image tag for the desired execution container"
+        required: true
+        type: string
+        default: 2022-04-28.1
+      repository:
+        description: "The name of the ECR repo from which to pull the image"
+        required: true
+        type: string
+        default: bip/build-harness
+      env:
+        description: "Which github environment to use, also corresponds to the self-hosted runner group"
+        required: true
+        type: string
+      recipe:
+        description: "The just recipe command to pass into the container"
+        required: true
+        type: string
+jobs:
+  manual_run:
+    uses: department-of-veterans-affairs/bia-infrastructure/.github/workflows/ci_container_call.yml@master
+    with:
+      repository: ${{github.event.inputs.repository}}
+      image_tag: ${{github.event.inputs.image_tag}}
+      env: ${{github.event.inputs.env}}
+      recipe: ${{github.event.inputs.recipe}}
+    secrets: inherit
