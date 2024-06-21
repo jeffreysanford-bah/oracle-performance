@@ -1,0 +1,441 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.3.0",
+  "deps": {
+    "@angular/material": "^18.0.4",
+    "d3": "^7.9.0",
+    "@nrwl/angular": "^19.3.0",
+    "nx": "19.3.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/project-graph.json~f2011d5e",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f865a1a1",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~c06e61e9",
+        "hash": "3436305967856748160"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~296c9923",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~fa2a08d7",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~54085490",
+        "hash": "13416966187277960508"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~b5af553b",
+        "hash": "3118892416819399667"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~031f37f5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ae8eee65",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~0646bb98",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ae1f8b44",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~c176cf03",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~e001ca0e",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~8b6d16a1",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~9f0aedc1",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~9994abe1",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~81a8e179",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~261a6d7d",
+        "hash": "8859734665920429578"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~2bd7f62c",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~bb02967c",
+        "hash": "14821955623611460715"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~c29c49bd",
+        "hash": "3221283380146315725"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ee0b5467",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~77a8904b",
+        "hash": "17337650996553312983"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~8f29bf3a",
+        "hash": "1452742487596035927"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~b3bc1081",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~1cb3c632",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~bd719fe8",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "2890296339167840526"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~92712d39",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~712919ef",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~504a132f",
+        "hash": "1383908585690328408"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~fb0ce319",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~7f2698a7",
+        "hash": "14563678369683211362"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "157388270907048515"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f38edef5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~fff6b2bf",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~c08fe28f",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~9fc0a566",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~321c31d7",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~5db0c2b8",
+        "hash": "15920268381047463410"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~63179483",
+        "hash": "14780460397829327411"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~7887473f",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~42959529",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~4b2d1964",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~4345a1f2",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": "package.json",
+        "hash": "10178264771599664409"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~c958aa57",
+        "hash": "3201066814202131428"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~4cd17d90",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~d32df715",
+        "hash": "16799422201390951382"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~8d3de397",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~ce95003f",
+        "hash": "15278499911710023479"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~211425da",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "14616005393634865308"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~7ff67808",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~adcdbeed",
+        "hash": "5424201127892772921"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~ecc9f3ab",
+        "hash": "12471262960032919249"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ae44f27a",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~893a9cb7",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~cc9c7653",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~242f7322",
+        "hash": "6416843289296682814"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14443875240832808589"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~2f1b45f5",
+        "hash": "12561668967798405821"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~28c45797",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~16e29e7d",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~96611689",
+        "hash": "8385974985813458345"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~75d6d0c8",
+        "hash": "4257090310387714389"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~bacd30cc",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~4db24249",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~1c12b314",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~0f640953",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~dea5b4da",
+        "hash": "2494066555295761598"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~bb3b4e56",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~c938b749",
+        "hash": "12113432602851934004"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~6d4d3cce",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~a39f6fd0",
+        "hash": "6416843289296682814"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~a2b6871e",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~396b6372",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~79f011b2",
+        "hash": "4750501371076423421"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f4e5aac4",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~8b9e1400",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~2ee7c01e",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~bf79ce9a",
+        "hash": "9197007015408932342"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~dd9d04c5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~fa21950d",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~6f044967",
+        "hash": "15481039146462936562"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~cb82c4e4",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~9a8f12f2",
+        "hash": "7826144286299600489"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~b2fd8014",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~b56a61bd",
+        "hash": "15312978754165792730"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~9a0966cd",
+        "hash": "13778064279631693975"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~50c935f3",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~6ef0397b",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~335f1adb",
+        "hash": "5041508474358645897"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5aeecc01",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~47400b28",
+        "hash": "16449992988445214294"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f591d1a9",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~50fa95e9",
+        "hash": "17241178684741584814"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~bdc5b013",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~1326de05",
+        "hash": "14541571692386608644"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5795db9d",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~76460f44",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f11b5cb4",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~0fc43ca3",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ae2964b5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~1c87acc1",
+        "hash": "8859734665920429578"
+      }
+    ],
+    "projectFileMap": {}
+  }
+}

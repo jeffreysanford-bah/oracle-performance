@@ -1,0 +1,92 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.3.0",
+  "deps": {
+    "@angular/material": "^18.0.4",
+    "d3": "^7.9.0",
+    "nx": "19.3.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/project-graph.json~1c6d7f63",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~19ed2cc8",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~2c8bd991",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~e8a571d5",
+        "hash": "14328555310512477161"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14443875240832808589"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5fd98af4",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/lockfile.hash",
+        "hash": "1431165285656598650"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~650f9f78",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~1ea37325",
+        "hash": "5668361229145479901"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~568d466f",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "15344491600641904294"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "5222733403296731496"
+      },
+      {
+        "file": ".nx/workspace-data/parsed-lock-file.json",
+        "hash": "562992124615104878"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~b338bf70",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": "package.json",
+        "hash": "16418898147249893209"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "50469816008249608"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~eff5c03d",
+        "hash": "4156500530878539914"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~5d3f3ec7",
+        "hash": "9087189334468588926"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "4156500530878539914"
+      }
+    ],
+    "projectFileMap": {}
+  }
+}

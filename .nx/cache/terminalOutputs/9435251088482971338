@@ -1,0 +1,61 @@
+
+[2m> [22m[2mnx run[22m backend:build
+
+[2m> [22mwebpack-cli build --node-env=production
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 8.41 KiB (javascript) 274 bytes (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/records/records.service.ts[39m[22m [1m[32m3:0-40[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '@faker-js/faker' in 'C:\Users\633517\repos\angular-apollo-nestjs\backend\src\app\records'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/oracle/oracle-database.service.ts:[32m[1m2:27[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module 'oracledb' or its corresponding type declarations.
+  [0m [90m 1 |[39m [36mimport[39m { [33mInjectable[39m } [36mfrom[39m [32m'@nestjs/common'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m [33m*[39m [36mas[39m oracledb [36mfrom[39m [32m'oracledb'[39m[33m;[39m
+   [90m   |[39m                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 3 |[39m [36mimport[39m { [36mfrom[39m[33m,[39m [33mObservable[39m } [36mfrom[39m [32m'rxjs'[39m[33m;[39m
+   [90m 4 |[39m [36mimport[39m { catchError[33m,[39m map[33m,[39m switchMap } [36mfrom[39m [32m'rxjs/operators'[39m[33m;[39m
+   [90m 5 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./src/app/records/dto/update-record.dto.ts:[32m[1m1:29[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@nestjs/mapped-types' or its corresponding type declarations.
+  [0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { [33mPartialType[39m } [36mfrom[39m [32m'@nestjs/mapped-types'[39m[33m;[39m
+   [90m   |[39m                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 2 |[39m [36mimport[39m { [33mCreateRecordDto[39m } [36mfrom[39m [32m'./create-record.dto'[39m[33m;[39m
+   [90m 3 |[39m [36mimport[39m { [33mCompany[39m } [36mfrom[39m [32m'../entities/company.entity'[39m[33m;[39m
+   [90m 4 |[39m [36mimport[39m { [33mPhone[39m[33m,[39m [33mAddress[39m } [36mfrom[39m [32m'../entities/record.entity'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./src/app/records/records.service.ts:[32m[1m5:23[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@faker-js/faker' or its corresponding type declarations.
+  [0m [90m 3 |[39m [36mimport[39m { [33mUpdateRecordDto[39m } [36mfrom[39m [32m'./dto/update-record.dto'[39m[33m;[39m
+   [90m 4 |[39m [36mimport[39m { [33mPhone[39m[33m,[39m [33mRecord[39m[33m,[39m [33mAddress[39m } [36mfrom[39m [32m'./entities/record.entity'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { faker } [36mfrom[39m [32m'@faker-js/faker'[39m[33m;[39m
+   [90m   |[39m                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 6 |[39m [36mimport[39m { [33mCompany[39m } [36mfrom[39m [32m'./entities/company.entity'[39m[33m;[39m
+   [90m 7 |[39m
+   [90m 8 |[39m [33m@[39m[33mInjectable[39m()[0m
+
+[1m[31mERROR[39m[22m in [1m./src/main.ts:[32m[1m4:27[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module 'oracledb' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mNestFactory[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m
+   [90m 3 |[39m [36mimport[39m { [33mAppModule[39m } [36mfrom[39m [32m'./app/app.module'[39m[33m;[39m
+  [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33m*[39m [36mas[39m oracledb [36mfrom[39m [32m'oracledb'[39m[33m;[39m
+   [90m   |[39m                           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+   [90m 5 |[39m
+   [90m 6 |[39m [36masync[39m [36mfunction[39m bootstrap() {
+   [90m 7 |[39m   [90m// Set the location of the tnsnames.ora file[39m[0m
+
+webpack compiled with [1m[31m5 errors[39m[22m (05c505d496e06472)
+Warning: command "webpack-cli build --node-env=production" exited with non-zero status code
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mRunning target build for project backend failed[39m
+
+[2mFailed tasks:[22m
+
+[2m-[22m backend:build
+
+[2mHint: run the command with[22m --verbose [2mfor more details.[22m
+
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+[1m[31mWatch error: Daemon closed the connection[39m[22m

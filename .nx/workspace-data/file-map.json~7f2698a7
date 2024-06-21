@@ -1,0 +1,213 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.3.0",
+  "deps": {
+    "@angular/material": "^18.0.4",
+    "d3": "^7.9.0",
+    "@nrwl/angular": "^19.3.0",
+    "nx": "19.3.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/file-map.json~77a8904b",
+        "hash": "17337650996553312983"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~c176cf03",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5aeecc01",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~396b6372",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~211425da",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f865a1a1",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~8f29bf3a",
+        "hash": "1452742487596035927"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~1326de05",
+        "hash": "14541571692386608644"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14443875240832808589"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ae2964b5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~a2b6871e",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~dd9d04c5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~8d3de397",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~96611689",
+        "hash": "8385974985813458345"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~1c87acc1",
+        "hash": "8859734665920429578"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~5795db9d",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~0f640953",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": "package.json",
+        "hash": "10178264771599664409"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "2704516949278459452"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~9fc0a566",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "157388270907048515"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~ecc9f3ab",
+        "hash": "12471262960032919249"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~1cb3c632",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~321c31d7",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~261a6d7d",
+        "hash": "8859734665920429578"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~ce95003f",
+        "hash": "15278499911710023479"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "2841187371585376118"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~47400b28",
+        "hash": "16449992988445214294"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~bacd30cc",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~76460f44",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~335f1adb",
+        "hash": "5041508474358645897"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~adcdbeed",
+        "hash": "5424201127892772921"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ee0b5467",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~bb02967c",
+        "hash": "14821955623611460715"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~b3bc1081",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~296c9923",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~4db24249",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f11b5cb4",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~fb0ce319",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~7887473f",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~4b2d1964",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~fff6b2bf",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~ae8eee65",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~d32df715",
+        "hash": "16799422201390951382"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~cc9c7653",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~f38edef5",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json~81a8e179",
+        "hash": "11493967444376222232"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json~bf79ce9a",
+        "hash": "9197007015408932342"
+      }
+    ],
+    "projectFileMap": {}
+  }
+}
