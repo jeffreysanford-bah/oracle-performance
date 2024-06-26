@@ -1,2 +1,5 @@
 .nx/workspace-data/file-map.json
 node_modules
+
+.nx/
+.angular/
