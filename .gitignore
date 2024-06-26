@@ -1,2 +1,36 @@
-.nx/workspace-data/file-map.json
-node_modules
+# Ignore build artifacts and dependencies
+node_modules/
+dist/
+out/
+target/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore Nx workspace-specific files
+.nx/
+.angular/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore sensitive files (e.g., API keys, secrets)
+secrets.json
+
+# Ignore generated files (e.g., compiled TypeScript, transpiled Java)
+*.js
+*.class
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore editor backup files
+*~
