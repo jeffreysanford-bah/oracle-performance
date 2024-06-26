@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignore build artifacts and dependencies
 node_modules/
 dist/
@@ -34,3 +35,10 @@ yarn.lock
 
 # Ignore editor backup files
 *~
+=======
+.nx/workspace-data/file-map.json
+node_modules
+
+.nx/
+.angular/
+>>>>>>> e4f7f2f07905108b2cd9d0c9bf29f9072f8e50ca

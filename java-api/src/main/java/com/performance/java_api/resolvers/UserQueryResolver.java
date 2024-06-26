@@ -1,12 +1,8 @@
 package com.performance.java_api.resolvers;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.performance.java_api.operations.UserService;
-
 import models.User;
-
 import java.util.List;
-
 import org.springframework.stereotype.Component;
 
 @Component
